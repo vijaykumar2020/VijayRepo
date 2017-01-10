@@ -146,6 +146,7 @@
 										<div class="row">
 											<label for="select">Select Category</label> <select
 												class="form-control">
+												<option>--Select--</option>
 												<option>Category A</option>
 												<option>Category B</option>
 												<option>Category C</option>
@@ -182,7 +183,7 @@
 							<!-- /.container-fluid -->
 
 							<div class="row">
-								<div class="col-lg-12">
+								<div class="col-lg-11">
 									<div class="form-group">
 										<input type="submit" value="Go"
 											class="btn btn-primary pull-right" />
@@ -212,13 +213,17 @@
 											<tbody>
 												<tr ng-repeat="personalDetail in personalDetails">
 													<td>{{personalDetail.flavour}}</td>
-													<td>{{personalDetail.packcontent}}</td>
+													<td>{{personalDetail.packContent}}</td>
 													<td>{{personalDetail.user}}</td>
-													<td>{{personalDetail.vairant}}</td>
+													<td>{{personalDetail.variant}}</td>
 													<td>{{personalDetail.brand}}</td>
 													<td>{{personalDetail.segment}}</td>
-													<td>{{personalDetail.nationdistribution}}</td>
-													<td>{{personalDetail.retailchainA}}</td>
+													<td>{{personalDetail.nationalDistribution}}</td>
+													<td><div class="col-sm-8">{{personalDetail.retailChainA}}
+														</div>
+														<div class="col-sm-3">
+															<input type="checkbox" value="">
+														</div></td>
 												</tr>
 											</tbody>
 										</table>

@@ -1,10 +1,111 @@
-{
-	"flavour" : "Strawberry",
-	"packcontent" : "100",
-	"user" : "gunama01",
-	"vairant" : "fresh cream",
-	"brand" : "ibaco",
-	"segment" : "ZZZZ",
-	"nationdistribution" : "XXXXX",
-	"retailchainA" : "YYYYY"
-}
+[
+  {
+    "flavour": "Tomato",
+    "packContent": "Chips",
+    "user": "cml9001",
+    "variant": "Packed",
+    "brand": "Lays",
+    "segment": "North",
+    "nationalDistribution": "Natwest",
+    "retailChainA": "Maxi",
+    "category": "Category A",
+    "geography": "Asia"
+  },
+    {
+    "flavour": "Orange",
+    "packContent": "Juice",
+    "user": "sdl9001",
+    "variant": "Fresh",
+    "brand": "Tropicana",
+    "segment": "South",
+    "nationalDistribution": "Central",
+    "retailChainA": "Avis",
+    "category": "Category B",
+    "geography": "Europe"
+  },
+    {
+    "flavour": "Apple",
+    "packContent": "Juice",
+    "user": "ggs9001",
+    "variant": "Fresh",
+    "brand": "Tropicana",
+    "segment": "East",
+    "nationalDistribution": "zonal",
+    "retailChainA": "More",
+    "category": "Category C",
+    "geography": "Europe"
+  },
+    {
+    "flavour": "Mint",
+    "packContent": "Chocolates",
+    "user": "ggs9001",
+    "variant": "Candy",
+    "brand": "Tic Tac",
+    "segment": "NationWide",
+    "nationalDistribution": "South",
+    "retailChainA": "ITC",
+    "category": "Category A",
+    "geography": "America"
+  },
+    {
+    "flavour": "Chicken",
+    "packContent": "Biriyani",
+    "user": "cfg9001",
+    "variant": "Fresh",
+    "brand": "Crimson",
+    "segment": "South",
+    "nationalDistribution": "Full",
+    "retailChainA": "Chakra Foods",
+    "category": "Category B",
+    "geography": "America"
+  },
+    {
+    "flavour": "Butter",
+    "packContent": "Popcorn",
+    "user": "gca9001",
+    "variant": "Fresh",
+    "brand": "Satyam",
+    "segment": "North",
+    "nationalDistribution": "South west",
+    "retailChainA": "Sams",
+    "category": "Category C",
+    "geography": "Australia"
+  },
+    {
+    "flavour": "Chicken",
+    "packContent": "puffs",
+    "user": "cmf9001",
+    "variant": "Fresh",
+    "brand": "Samuels",
+    "segment": "East",
+    "nationalDistribution": "Natwest",
+    "retailChainA": "Giant Eagle",
+    "category": "Category A",
+    "geography": "Australia"
+  },
+    {
+    "flavour": "Tomato",
+    "packContent": "Chips",
+    "user": "cml9001",
+    "variant": "Packed",
+    "brand": "Lays",
+    "segment": "North",
+    "nationalDistribution": "Natwest",
+    "retailChainA": "Walmart",
+    "category": "Category B",
+    "geography": "Australia"
+  },
+    {
+    "flavour": "Onion",
+    "packContent": "Chips",
+    "user": "cml9001",
+    "variant": "Packed",
+    "brand": "Lays",
+    "segment": "West",
+    "nationalDistribution": "Natwest",
+    "retailChainA": "Nilgiris",
+    "category": "Category C",
+    "geography": "Africa"
+  }
+  
+  ]
