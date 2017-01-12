@@ -145,7 +145,7 @@
 									<div class="well">
 										<div class="row">
 											<label for="select">Select Category</label> <select
-												name="categorySelect" ng-model="categorySelectval"
+												name="categorySelect" ng-model="category"
 												ng-options="categorySelect as categorySelect for categorySelect in categorySelects"
 												class="form-control">
 											</select>
@@ -160,7 +160,7 @@
 											<label for="select">Date Range</label> <select
 												name="dateRangeSelects" ng-model="dateRangeSelectval"
 												ng-options="dateRangeSelect as dateRangeSelect for dateRangeSelect in dateRangeSelects"
-												ng-disabled="categorySelectval === '--Select--'"
+												ng-disabled="category === ''"
 												class="form-control">
 											</select>
 										</div>
@@ -172,9 +172,9 @@
 									<div class="well">
 										<div class="row">
 											<label for="select">Geography</label> <select
-												name="geographySelects" ng-model="geographySelectval"
+												name="geographySelects" ng-model="geography"
 												ng-options="geographySelect as geographySelect for geographySelect in geographySelects"
-												ng-disabled="dateRangeSelectval === '--Select--'"
+												ng-disabled="dateRangeSelectval === ''"
 												class="form-control">
 											</select>
 										</div>
@@ -212,7 +212,8 @@
 												</tr>
 											</thead>
 											<tbody>
-												<tr ng-repeat="personalDetail in personalDetails">
+												<tr
+													ng-repeat="personalDetail in personalDetails   | filter:category | filter:geography">
 													<td>{{personalDetail.flavour}}</td>
 													<td>{{personalDetail.packContent}}</td>
 													<td>{{personalDetail.user}}</td>
