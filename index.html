@@ -160,8 +160,7 @@
 											<label for="select">Date Range</label> <select
 												name="dateRangeSelects" ng-model="dateRangeSelectval"
 												ng-options="dateRangeSelect as dateRangeSelect for dateRangeSelect in dateRangeSelects"
-												ng-disabled="category === ''"
-												class="form-control">
+												ng-disabled="category === ''" class="form-control">
 											</select>
 										</div>
 									</div>
@@ -174,8 +173,7 @@
 											<label for="select">Geography</label> <select
 												name="geographySelects" ng-model="geography"
 												ng-options="geographySelect as geographySelect for geographySelect in geographySelects"
-												ng-disabled="dateRangeSelectval === ''"
-												class="form-control">
+												ng-disabled="dateRangeSelectval === ''" class="form-control">
 											</select>
 										</div>
 									</div>
@@ -197,38 +195,56 @@
 
 							<div class="row">
 								<div class="col-lg-12">
-									<div class="table-responsive">
-										<table class="table table-striped table-bordered panel-body">
-											<thead>
-												<tr>
-													<th>Flavour</th>
-													<th>Pack Content</th>
-													<th>User</th>
-													<th>Variant</th>
-													<th>Brand</th>
-													<th>Segment</th>
-													<th>National Distribution</th>
-													<th>Retail Chain A</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr
-													ng-repeat="personalDetail in personalDetails   | filter:category | filter:geography">
-													<td>{{personalDetail.flavour}}</td>
-													<td>{{personalDetail.packContent}}</td>
-													<td>{{personalDetail.user}}</td>
-													<td>{{personalDetail.variant}}</td>
-													<td>{{personalDetail.brand}}</td>
-													<td>{{personalDetail.segment}}</td>
-													<td>{{personalDetail.nationalDistribution}}</td>
-													<td><div class="col-sm-8">{{personalDetail.retailChainA}}
-														</div>
-														<div class="col-sm-3">
-															<input type="checkbox" value="">
-														</div></td>
-												</tr>
-											</tbody>
-										</table>
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<div class="btn-group">
+												<button type="button"
+													class="btn btn-primary btn-sm dropdown-toggle"
+													data-toggle="dropdown">
+													<i class="fa fa-gear"></i> <span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#" ng-click="enableTable()"><i
+															class="fa fa-table fa-fw">Table</i></a></li>
+													<li><a href="#" ng-click="enableChart()"><i
+															class="fa fa-bar-chart-o fa-fw">Chart</i></a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="table-responsive" ng-show="tableEnabled">
+											<table class="table table-striped table-bordered panel-body">
+												<thead>
+													<tr>
+														<th>Flavour</th>
+														<th>Pack Content</th>
+														<th>User</th>
+														<th>Variant</th>
+														<th>Brand</th>
+														<th>Segment</th>
+														<th>National Distribution</th>
+														<th>Retail Chain A</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr
+														ng-repeat="personalDetail in personalDetails   | filter:category | filter:geography">
+														<td>{{personalDetail.flavour}}</td>
+														<td>{{personalDetail.packContent}}</td>
+														<td>{{personalDetail.user}}</td>
+														<td>{{personalDetail.variant}}</td>
+														<td>{{personalDetail.brand}}</td>
+														<td>{{personalDetail.segment}}</td>
+														<td>{{personalDetail.nationalDistribution}}</td>
+														<td><div class="col-sm-8">{{personalDetail.retailChainA}}
+															</div>
+															<div class="col-sm-3">
+																<input type="checkbox" value="">
+															</div></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div ng-show="chartEnabled">Check - Chart view</div>
 									</div>
 								</div>
 							</div>
@@ -237,16 +253,18 @@
 				</div>
 			</form>
 		</div>
-		<!-- /#wrapper -->
 
-		<!-- jQuery -->
-		<script src="vendor/jquery/jquery.min.js"></script>
+	</div>
+	<!-- /#wrapper -->
 
-		<!-- Bootstrap Core JavaScript -->
-		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!-- jQuery -->
+	<script src="vendor/jquery/jquery.min.js"></script>
 
-		<!-- Metis Menu Plugin JavaScript -->
-		<script src="vendor/metisMenu/metisMenu.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Metis Menu Plugin JavaScript -->
+	<script src="vendor/metisMenu/metisMenu.min.js"></script>
 </body>
 
 </html>

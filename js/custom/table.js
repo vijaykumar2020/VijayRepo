@@ -19,4 +19,17 @@ app.controller("tableController", function($scope, $http) {
 	$scope.optimizedSearch = function(personalDetail) {
 		return personalDetail.User.Stats[0].active === "1";
 	};
+
+	$scope.tableEnabled = true;
+	$scope.chartEnabled = false;
+
+	$scope.enableTable = function() {
+		$scope.tableEnabled = true;
+		$scope.chartEnabled = false;
+	};
+
+	$scope.enableChart = function() {
+		$scope.tableEnabled = false;
+		$scope.chartEnabled = true;
+	};
 });
