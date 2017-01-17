@@ -23,6 +23,9 @@ app.controller("tableController", function($scope, $http) {
 	$scope.tableEnabled = true;
 	$scope.chartEnabled = false;
 
+	$scope.simulatorEnabled = true;
+	$scope.optimizerEnabled = false;
+
 	$scope.enableTable = function() {
 		$scope.tableEnabled = true;
 		$scope.chartEnabled = false;
@@ -31,5 +34,15 @@ app.controller("tableController", function($scope, $http) {
 	$scope.enableChart = function() {
 		$scope.tableEnabled = false;
 		$scope.chartEnabled = true;
+	};
+
+	$scope.enableSimulator = function() {
+		$scope.optimizerEnabled = false;
+		$scope.simulatorEnabled = true;
+	};
+
+	$scope.enableOptimizer = function() {
+		$scope.optimizerEnabled = true;
+		$scope.simulatorEnabled = false;
 	};
 });
