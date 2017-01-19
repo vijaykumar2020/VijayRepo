@@ -1,0 +1,129 @@
+{
+	"name": "Chart Data",
+	"children": [
+		{
+			"name": "Category A",
+			"children": [
+				{
+					"name": "Lays",
+					"children": [
+						{
+							"name": "Total Sale",
+							"size": 200
+						},
+						{
+							"name": "Segment",
+							"size": 20
+						},
+						{
+							"name": "National Distribution",
+							"size": 20
+						},
+						{
+							"name": "Retail Chain",
+							"size": 20
+						},
+						{
+							"name": "Geography",
+							"size": 20
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Category B",
+			"children": [
+				{
+					"name": "Coke",
+					"children": [
+						{
+							"name": "Sale",
+							"size": 100
+						},
+						{
+							"name": "Flavour",
+							"size": 20
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Category C",
+			"children": [
+				{
+					"name": "Coke",
+					"children": [
+						{
+							"name": "Total Sale",
+							"children": [
+								{
+									"name": "Segment",
+									"children": [
+										{
+											"name": "South",
+											"size": 100
+										},
+										{
+											"name": "West",
+											"size": 25
+										},
+										{
+											"name": "Central",
+											"size": 72
+										}
+									]
+								},
+								{
+									"name": "Retail Chain",
+									"children": [
+										{
+											"name": "Walmart",
+											"size": 34
+										},
+										{
+											"name": "Giant Eagle",
+											"size": 45
+										},
+										{
+											"name": "Sams",
+											"size": 12
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Tropicana",
+					"children": [
+						{
+							"name": "Total Sale",
+							"children": [
+								{
+									"name": "Segment",
+									"children": [
+										{
+											"name": "South",
+											"size": 56
+										},
+										{
+											"name": "West",
+											"size": 24
+										},
+										{
+											"name": "Central",
+											"size": 7
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

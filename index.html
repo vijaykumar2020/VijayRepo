@@ -32,6 +32,7 @@
 <script src="dist/js/sb-admin-2.js"></script>
 <script src="js/custom/datepicker.js"></script>
 <script src="js/custom/table.js"></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 </head>
 
 <body ng-controller="tableController">
@@ -120,10 +121,8 @@
 				<div class="sidebar-nav navbar-collapse">
 					<ul class="nav" id="side-menu">
 
-						<li><a href="#" ng-click="enableSimulator()">
-								Simulation</a></li>
-						<li><a href="#" ng-click="enableOptimizer()">
-								Optimizer</a></li>
+						<li><a href="#" ng-click="enableSimulator()"> Simulation</a></li>
+						<li><a href="#" ng-click="enableOptimizer()"> Optimizer</a></li>
 					</ul>
 				</div>
 				<!-- /.sidebar-collapse -->
@@ -247,7 +246,12 @@
 											</tbody>
 										</table>
 									</div>
-									<div ng-show="chartEnabled">Check - Chart view</div>
+									<div ng-show="chartEnabled">
+										<div class="row">
+											<div id="chartArea"></div>
+											<script src="js/custom/chart.js"></script>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
